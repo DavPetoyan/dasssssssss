@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
       <Header />
-      petli Davo dzuk
+      Contact
     </>
   )
 }

@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.searchInp::placeholder {
+    font-size: 14px;
+    color: #fff;
+}
+.searchInp:focus {
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+}
