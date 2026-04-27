@@ -4,19 +4,48 @@
     box-sizing: border-box;
     font-family: Poppins;
 }
+
 .card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.searchInp {
+    transition: all 0.4s ease;
+
+}
+
 .searchInp::placeholder {
     font-size: 14px;
     color: #fff;
+    padding: 10px;
 }
+
 .searchInp:focus {
-    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    box-shadow: rgb(255, 255, 255) 0px 3px 8px;
     color: white;
-    transition: all 0.4s ease;
 }
 
 .logo {
     font-family: "Bebas Neue", sans-serif;
+}
+
+.drop {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bgImage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/Gemini_Generated_Image_opacleopacleopac.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    color: transparent;
+    text-decoration: underline;
+    background-clip: text;
+    background-image: url(assets/Gemini_Generated_Image_opacleopacleopac.png);
+    background-position: center;
 }
