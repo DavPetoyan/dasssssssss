@@ -5,17 +5,23 @@ import App from './App.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ShopPage from "./pages/ShopPage.jsx"
 import ContactPage from "./pages/ContactPage.jsx"
+import Layout from './Layout.jsx'
+import Single from './pages/SinglePage.jsx'
 
-{/* <App /> */}
+{/* <App /> */ }
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<App />}/>
-      <Route path='/shop' element={<ShopPage />}/>
-      <Route path='/contact' element={<ContactPage />}/>
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<App />} />
+          <Route path='/shop' element={<ShopPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/single/:id' element={<Single />} />
+        </Route>
+
+      </Routes>
     </BrowserRouter>
   </StrictMode>,
 )

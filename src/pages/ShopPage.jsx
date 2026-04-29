@@ -60,9 +60,10 @@ function Shop() {
             <Header setInpVal={setInpValue} inpVal={inpValue} setCategoryUrl={setCategoryUrl} />
             <section className="w-full border-b border-gray-400 border-dashed pt-50">
                 <div className="max-w-360 mx-auto flex flex-wrap gap-8.5 justify-center ">
-                    {products.map((e) => <Card text={e.title} key={e.id} img={e.images[0]} price={e.price} returnPolicy={e.returnPolicy} />)}
+                    {products.map((e) => <Card text={e.title} key={e.id} img={e.images[0]} price={e.price} returnPolicy={e.returnPolicy} id={e.id}/>)}
                 </div>
             </section>
+
 
         </>
     )

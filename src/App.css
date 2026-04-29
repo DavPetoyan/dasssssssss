@@ -49,3 +49,27 @@
     background-image: url(assets/Gemini_Generated_Image_opacleopacleopac.png);
     background-position: center;
 }
+
+.prod {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.imgsside {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.sideImg {
+    transition: all 0.4s ease;
+}
+
+.sideImg:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    border-right: 1px solid rgb(202, 202, 202);
+}
+.fas{
+    transform: translateY(-1px);
+
+}
