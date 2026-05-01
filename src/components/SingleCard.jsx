@@ -1,11 +1,11 @@
-export default function SingleCard({ title, img, price, ret, desc, images, rating, category }) {
+export default function SingleCard({ title, img, price, ret, desc, images, rating, category , setSelectImg}) {
 
     return (
         <>
             <div className="prod w-full flex rounded-3xl">
                 <div className="image w-1/2 h-full flex  ">
                     <div className="imgsside  h-full  p-5 rounded-3xl">
-                        {images.map((e, i) => <img src={e} key={i} alt="" className="sideImg h-full object-contain w-40 cursor-pointer" />)}
+                        {images.map((e, i) => <img src={e} key={i} alt="" onClick={() => setSelectImg(e)} className="sideImg h-full object-contain w-40 cursor-pointer" />)}
                     </div>
                     <div className="w-full">
                         <img src={img} alt="" className="w-full h-full object-cover" />

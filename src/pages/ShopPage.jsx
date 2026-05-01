@@ -6,11 +6,11 @@ function Shop() {
 
     const [products, setProducts] = useState([])
     const [inpValue, setInpValue] = useState("")
-    useEffect(() => {
-        fetch('https://dummyjson.com/products')
-            .then(res => res.json())
-            .then(res => setProducts(res.products));
-    }, [])
+    // useEffect(() => {
+    //     fetch('https://dummyjson.com/products')
+    //         .then(res => res.json())
+    //         .then(res => setProducts(res.products));
+    // }, [])
 
     const [categoryUrl, setCategoryUrl] = useState(null)
 
